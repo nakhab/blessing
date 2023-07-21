@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Encrypted</title>
+</head>
+<body>
+    <h1>File Encrypted!</h1>
+    <p>
+        The file has been encrypted successfully. Click the button below to download the encrypted file along with the key file.
+    </p>
+    <a href="{% url 'download' encrypted_file.pk %}">Download Encrypted File</a>
+    <br>
+    <a href="{% url 'download' encrypted_file.key_file.pk %}">Download Key File</a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decrypt File</title>
+</head>
+<body>
+    <h1>Decrypt File</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="file_id">Enter File ID:</label>
+        <input type="text" id="file_id" name="file_id" required>
+        <br>
+        <label for="key">Enter 35 Character Key:</label>
+        <input type="text" id="key" name="key" required>
+        <br>
+        <input type="submit" value="Decrypt">
+    </form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encrypt Files and Text</title>
+</head>
+<body>
+    <h1>Encrypt Files and Text</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <br>
+        <input type="submit" value="Encrypt">
+    </form>
+</body>
+</html>
